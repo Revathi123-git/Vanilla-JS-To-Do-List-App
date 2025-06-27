@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+   }
+   li{
+    list-style-type:none;
+   }
+   #taskList{
+    min-height: 200px;
+   overflow-x:visible;
+    overflow-y: auto; 
+    width:800px;
+    border:1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    word-wrap: break-word;
+   }
+ #taskInput{
+   border: 1px solid black;
+   border-radius: 10px;
+   resize:none;
+  padding:10px
+ }
+ button{
+    border: 1px solid black;
+    border-radius:10px;
+    padding:10px;
+    width:80px;
+    font-size:20px
+ }
+    </style>
+</head>
+<body>
+<h2>My to do List</h2>
+<div style="display: flex; gap:10px">
+    <textarea type="text" id="taskInput" rows="3" cols="40" placeholder="Enter a task"></textarea>
+<button onclick="addTask()">Add</button>
+</div>
+<ul id="taskList"></ul>
+<script src="../javascript/javascript.js"></script>
+</body>
+</html>
